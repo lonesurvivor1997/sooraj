@@ -60,8 +60,8 @@ VALUES
 
 (3011,9891.88,"1990-06-10",2006,1001);
 
- SELECT * FROM SalesPeople WHERE sname LIKE 'a%';
- SELECT SalesPeople.Sname,Orders.Amt from SalesPeople , Orders where SalesPeople.Snum = Orders.Snum and Orders.amt > 2000;
+ SELECT * FROM SalesPeople WHERE Sname LIKE 'a%';
+ SELECT SalesPeople.Sname,Orders.Amt from SalesPeople , Orders where SalesPeople.Snum = Orders.Snum and Orders.Amt > 2000;
  SELECT COUNT(*) FROM SalesPeople  WHERE City LIKE 'Newyork';
  select count(if(City='London',1,null)) as London,
         count(if(City='Paris',1,null)) as Paris
